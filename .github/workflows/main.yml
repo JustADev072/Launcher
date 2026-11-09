@@ -15,9 +15,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@main
+      - uses: actions/checkout@v4
         with:
-          submodules: 'recursive'
+            ref: c95dfe89e15d8ec142acdf54595d0ab7358dac5e
+            submodules: recursive
 
       - name: Install Dependencies
         run: |
